@@ -18,7 +18,7 @@ namespace MusicPlayer
             _waveOutEvent = new WaveOutEvent();
         }
 
-        public void GetPath(string path)
+        public void GetFilePath(string path)
         {                       
             _audioFileReader = new AudioFileReader(path);
             _waveOutEvent.Init(_audioFileReader);
