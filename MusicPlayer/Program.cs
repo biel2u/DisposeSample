@@ -12,7 +12,7 @@ namespace MusicPlayer
             Console.WriteLine(@"Please specify mp3 file location (e.g C:\\Users\UserName\Desktop\Music.mp3)...");
             var path = Console.ReadLine();
 
-            player.GetFilePath(path);
+            player.LoadFile(path);
             player.Play();
 
             Console.WriteLine("Type 1 to PLAY, 2 to PAUSE, 3 to DISPOSE, 4 to EXIT");
